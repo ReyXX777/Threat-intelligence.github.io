@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Zero Trust Threat Intelligence</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Header Section with Background Image -->
+    <header style="background-image: url('images/threat.jpeg'); background-size: cover; background-position: center; color: white;">
+        <h1>AI-Powered Behavioral & Heuristic Analysis</h1>
+        <p>Integrating advanced threat intelligence in Zero Trust architecture for robust cybersecurity.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#data-collection">Data Collection</a></li>
+            <li><a href="#real-time-monitoring">Real-Time Monitoring</a></li>
+            <li><a href="#machine-learning">Machine Learning & AI</a></li>
+            <li><a href="#threat-intelligence">Threat Intelligence Sharing</a></li>
+            <li><a href="#zero-trust-architecture">Zero Trust Architecture</a></li>
+            <li><a href="#training-awareness">Training & Awareness</a></li>
+            <li><a href="#third-party-security">Third-Party Integration Security</a></li>
+            <li><a href="#api-security">Securing APIs in Cloud Environments</a></li>
+            <li><a href="#third-party-api-best-practices">Third-Party API Security Best Practices</a></li>
+            <li><a href="#non-compliant-api-response">Incident Response for Non-Compliant API Providers</a></li>
+            <li><a href="#automated-response">Automated Response</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Data Collection with Image -->
+        <section id="data-collection">
+            <img src="images/data.jpeg" alt="Data Collection" style="width:100%; border-radius:8px;">
+            <h2>Data Collection</h2>
+            <p>Gathering telemetry data from endpoints: user activities, network traffic, and system events.</p>
+            <input type="text" placeholder="Enter telemetry data here..." />
+        </section>
+
+        <!-- Real-Time Monitoring with Image -->
+        <section id="real-time-monitoring">
+            <img src="images/time.jpeg" alt="Real-Time Monitoring" style="width:100%; border-radius:8px;">
+            <h2>Real-Time Monitoring</h2>
+            <p>Continuous monitoring of user and system activities, identifying anomalies against a behavioral baseline.</p>
+            <div id="monitor-log">
+                <h3>Live Logs</h3>
+                <div id="log-display">Loading activity data...</div>
+            </div>
+            <button onclick="showLightbox('monitoringLightbox')">View Real-Time Logs</button>
+        </section>
+
+        <!-- Machine Learning and AI with Image -->
+        <section id="machine-learning">
+            <img src="images/machine.jpg" alt="Machine Learning and AI" style="width:100%; border-radius:8px;">
+            <h2>Machine Learning & AI</h2>
+            <p>Utilizing ML models to detect anomalies, Indicators of Compromise (IOCs), and Indicators of Attack (IOAs).</p>
+            <button onclick="showLightbox('mlLightbox')">Learn More About ML & AI</button>
+        </section>
+
+        <!-- Threat Intelligence Sharing with Image -->
+        <section id="threat-intelligence">
+            <img src="images/ai.jpeg" alt="Threat Intelligence Sharing" style="width:100%; border-radius:8px;">
+            <h2>Threat Intelligence Sharing</h2>
+            <p>Sharing and leveraging collective knowledge to improve detection accuracy and reduce false positives.</p>
+        </section>
+
+        <!-- Zero Trust Architecture with Image -->
+        <section id="zero-trust-architecture">
+            <img src="images/zero.jpeg" alt="Zero Trust Architecture" style="width:100%; border-radius:8px;">
+            <h2>Zero Trust Architecture</h2>
+            <p>A security framework assuming every request may be a potential threat, enforcing rigorous verification for all access requests.</p>
+        </section>
+
+        <!-- Training and Awareness with Image -->
+        <section id="training-awareness">
+            <img src="images/training.jpeg" alt="Training and Awareness" style="width:100%; border-radius:8px;">
+            <h2>Training & Awareness</h2>
+            <p>Training employees and promoting awareness of Zero Trust principles to enhance security posture and compliance.</p>
+        </section>
+
+        <!-- Third-Party Integration Security with Image -->
+        <section id="third-party-security">
+            <img src="images/third.jpeg" alt="Third-Party Integration Security" style="width:100%; border-radius:8px;">
+            <h2>Third-Party Integration Security</h2>
+            <p>Strategies to secure Zero Trust architecture while integrating third-party services and vendors.</p>
+        </section>
+
+        <!-- Securing APIs in Cloud Environments with Image -->
+        <section id="api-security">
+            <img src="images/api.jpeg" alt="API Security" style="width:100%; border-radius:8px;">
+            <h2>Securing APIs in Cloud Environments</h2>
+            <p>Best practices for securing APIs to protect data and ensure system integrity.</p>
+        </section>
+
+        <!-- Third-Party API Security Best Practices with Image -->
+        <section id="third-party-api-best-practices">
+            <img src="images/api-secure.jpeg" alt="API Security Best Practices" style="width:100%; border-radius:8px;">
+            <h2>Third-Party API Security Best Practices</h2>
+            <p>Guidelines to ensure that third-party APIs meet security standards and protect organizational data.</p>
+            <input type="text" placeholder="Enter API security key..." />
+        </section>
+
+        <!-- Incident Response for Non-Compliant API Providers with Image -->
+        <section id="non-compliant-api-response">
+            <img src="images/incident.jpeg" alt="Incident Response" style="width:100%; border-radius:8px;">
+            <h2>Incident Response for Non-Compliant API Providers</h2>
+            <p>Steps to mitigate and address security breaches caused by non-compliant API providers.</p>
+        </section>
+
+        <!-- Automated Response with Image -->
+        <section id="automated-response">
+            <img src="images/response.jpeg" alt="Automated Response" style="width:100%; border-radius:8px;">
+            <h2>Automated Response</h2>
+            <p>Automated isolation and response mechanisms for detected threats to maintain system integrity.</p>
+            <button id="simulate-threat" onclick="simulateThreat()">Simulate Threat Detection</button>
+            <div id="response-status">Awaiting threat simulation...</div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Secure AI Systems. Enhancing cybersecurity through AI-driven threat intelligence.</p>
+    </footer>
+
+    <!-- Lightbox for Real-Time Logs -->
+    <div id="monitoringLightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" onclick="closeLightbox('monitoringLightbox')">&times;</span>
+            <h2>Real-Time Monitoring Logs</h2>
+            <p>Here are detailed logs of the real-time activities being monitored.</p>
+            <!-- Logs Placeholder -->
+            <div id="live-log-content">Logs loading...</div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Machine Learning and AI Info -->
+    <div id="mlLightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" onclick="closeLightbox('mlLightbox')">&times;</span>
+            <h2>Machine Learning & AI</h2>
+            <p>Discover how machine learning models are enhancing cybersecurity by detecting complex threats.</p>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
